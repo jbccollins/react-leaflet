@@ -11,8 +11,8 @@ const config = {
   output: {
     file:
       env === 'production'
-        ? 'dist/react-leaflet.min.js'
-        : 'dist/react-leaflet.js',
+        ? 'dist/react-leaflet-extendable.min.js'
+        : 'dist/react-leaflet-extendable.js',
     format: 'umd',
     globals: {
       leaflet: 'L',

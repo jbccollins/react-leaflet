@@ -1,23 +1,50 @@
-# React-Leaflet [![Build Status](https://img.shields.io/travis/PaulLeCam/react-leaflet/master.svg)](https://travis-ci.org/PaulLeCam/react-leaflet) [![npm version](https://img.shields.io/npm/v/react-leaflet.svg)](https://www.npmjs.com/package/react-leaflet) [![CDNJS version](https://img.shields.io/cdnjs/v/react-leaflet.svg)](https://cdnjs.com/libraries/react-leaflet)
+# React-Leaflet-Extendable
 
-⚛️ React components for 🍃 Leaflet maps.
+This is literally just a fork of [react-leaflet](https://github.com/PaulLeCam/react-leaflet) that adds the ability to directly extend components. Unless you have an issue specifically about extending components DO NOT raise issues here. Raise them on the [react-leaflet](https://github.com/PaulLeCam/react-leaflet/issues) repository.
 
-## [Documentation](http://react-leaflet.js.org)
+This repository exists because of https://github.com/PaulLeCam/react-leaflet/issues/506
 
-- [Getting started](https://react-leaflet.js.org/docs/en/intro.html)
-- [API reference](https://react-leaflet.js.org/docs/en/context.html)
+Please read through that issue before deciding if you actually should use this library and not react-leaflet. For most use cases react-leaflet will be fine.
 
-## Changes
+TLDR;
+react-leaflet v2 makes it impossible to directly extend these components:
 
-See the [CHANGELOG](CHANGELOG.md) and [UPGRADING](UPGRADING.md) files.
+- AttributionControl
+- Circle
+- ExtendableCircle
+- FeatureGroup
+- GeoJSON
+- ImageOverlay
+- LayerGroup
+- LayersControl
+- Marker
+- Pane
+- Polygon
+- Polyline
+- Popup
+- Rectangle
+- ScaleControl
+- TileLayer
+- Tooltip
+- VideoOverlay
+- WMSTileLayer
+- ZoomControl
 
-## Contributing
+This fork lets you extend those.
 
-See [CONTRIBUTING](CONTRIBUTING.md) file.
+The extendable exports of these components are all formatted like: `Extendable<COMPONENT>`
 
-## Support
+e.g. `ExtendableAttributionControl`, `ExtendableCircle`, etc...
 
-Please **do not** use GitHub issues for support, but instead post your questions on [StackOverflow](https://stackoverflow.com/) using the [`react-leaflet` tag](https://stackoverflow.com/questions/tagged/react-leaflet).
+## Usage
+```javascript
+import { ExtendableTileLayer, withLeaflet } from 'react-leaflet-extendable'
+
+class MyCustomTileLayer extends ExtendableTileLayer {
+    // Go nuts here
+}
+export default withLeaflet(MyCustomTileLayer)
+```
 
 ## License
 
