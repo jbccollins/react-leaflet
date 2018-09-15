@@ -19,5 +19,5 @@ class ZoomControl extends MapControl<LeafletElement, Props> {
     return new Control.Zoom(props)
   }
 }
-
+export { ZoomControl as ExtendableZoomControl }
 export default withLeaflet(ZoomControl)

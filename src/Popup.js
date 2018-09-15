@@ -95,5 +95,5 @@ class Popup extends DivOverlay<LeafletElement, Props> {
     }
   }
 }
-
+export { Popup as ExtendablePopup }
 export default withLeaflet(Popup)

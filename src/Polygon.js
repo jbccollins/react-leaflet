@@ -23,5 +23,5 @@ class Polygon extends Path<LeafletElement, Props> {
     this.setStyleIfChanged(fromProps, toProps)
   }
 }
-
+export { Polygon as ExtendablePolygon }
 export default withLeaflet(Polygon)

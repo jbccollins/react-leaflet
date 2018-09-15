@@ -192,5 +192,5 @@ class LayersControl extends MapControl<LeafletElement, LayersControlProps> {
     return <Fragment>{children}</Fragment>
   }
 }
-
+export { LayersControl as ExtendableLayersControl }
 export default withLeaflet(LayersControl)
