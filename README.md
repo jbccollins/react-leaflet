@@ -1,5 +1,4 @@
-# React-Leaflet-Extendable
-
+# React-Leaflet-Extendable [![npm version](https://img.shields.io/npm/v/react-leaflet-extendable.svg)](https://www.npmjs.com/package/react-leaflet-extendable)
 This is literally just a fork of [react-leaflet](https://github.com/PaulLeCam/react-leaflet) that adds the ability to directly extend components. Unless you have an issue specifically about extending components DO NOT raise issues here. Raise them on the [react-leaflet](https://github.com/PaulLeCam/react-leaflet/issues) repository.
 
 This repository exists because of https://github.com/PaulLeCam/react-leaflet/issues/506
