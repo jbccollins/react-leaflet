@@ -21,5 +21,5 @@ class Rectangle extends Path<LeafletElement, Props> {
     this.setStyleIfChanged(fromProps, toProps)
   }
 }
-
+export { Rectangle as ExtendableRectangle }
 export default withLeaflet(Rectangle)

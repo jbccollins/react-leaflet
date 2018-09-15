@@ -16,5 +16,5 @@ class LayerGroup<
     return el
   }
 }
-
+export { LayerGroup as ExtendableLayerGroup }
 export default withLeaflet(LayerGroup)

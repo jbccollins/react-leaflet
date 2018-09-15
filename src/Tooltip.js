@@ -57,5 +57,5 @@ class Tooltip extends DivOverlay<LeafletElement, Props> {
     }
   }
 }
-
+export { Tooltip as ExtendableTooltip }
 export default withLeaflet(Tooltip)

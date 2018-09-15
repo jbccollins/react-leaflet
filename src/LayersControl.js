@@ -195,4 +195,5 @@ const LayersControlExport: Object = withLeaflet(LayersControl)
 LayersControlExport.BaseLayer = BaseLayer
 LayersControlExport.Overlay = Overlay
 
+export { LayersControl as ExtendableLayersControl }
 export default LayersControlExport

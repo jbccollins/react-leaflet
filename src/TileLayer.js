@@ -21,5 +21,5 @@ class TileLayer extends GridLayer<LeafletElement, Props> {
     }
   }
 }
-
+export { TileLayer as ExtendableTileLayer }
 export default withLeaflet(TileLayer)

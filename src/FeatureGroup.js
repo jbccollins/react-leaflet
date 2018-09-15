@@ -25,5 +25,5 @@ class FeatureGroup extends Path<LeafletElement, Props> {
     this.setStyle(this.props)
   }
 }
-
+export { FeatureGroup as ExtendableFeatureGroup }
 export default withLeaflet(FeatureGroup)

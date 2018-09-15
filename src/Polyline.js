@@ -23,5 +23,5 @@ class Polyline extends Path<LeafletElement, Props> {
     this.setStyleIfChanged(fromProps, toProps)
   }
 }
-
+export { Polyline as ExtendablePolyline }
 export default withLeaflet(Polyline)
